@@ -1,4 +1,8 @@
 Address::Application.routes.draw do
+   resources :places do
+   post 'search', :on => :collection
+   end
+  
   get "pages/home"
   get "pages/about"
   # The priority is based upon order of creation: first created -> highest priority.

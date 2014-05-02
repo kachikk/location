@@ -1,0 +1,11 @@
+class PlacesController < ApplicationController
+def index
+@places =Place.all
+#@letter=(params[:word])
+end
+def search
+@places= Place.where(:all, :conditions => ["location LIKE ?", "#{params[:]}"])
+
+end
+
+end
