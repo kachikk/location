@@ -4,7 +4,7 @@ def index
 #@letter=(params[:word])
 end
 def search
-@places= Place.where(:all, :conditions => ["location LIKE ?", "#{params[:]}"])
+@places= Place.find(:all, :conditions => ["name LIKE ?", " #{params[:key]}"])
 
 end
 

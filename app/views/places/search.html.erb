@@ -1,24 +1,24 @@
 <h1>Search results</h1>
 <table border="1">
 <tr>
-<td width="40%"><p align="center"><i><b>Name</b></i></td>
+<th>
+<td width="40%"><b>Name</td>
 <td width="20%"><p align="center"><i><b>Location</b></i></td>
 <td width="20%"><p align="center"><i><b>Latitude</b></i></td>
 <td width="20%"><p align="center"><i><b>Longitude</b></i></td>
+</th>
 </tr>
-<%@places.each do|place|%>
-<tr>
+
+<% @places.each do |place| %>
+<tbody>
 <td>
-<a href="
-<%=place.id%>
-">
-<%=place.name%>
-</a>
+<td><%= place.name %></td>
 </td>
 <td><%= place.location %></td>
 <td><%= place.latitude %></td>
 <td><%= place.longitude %></td>
 </tr>
 <% end %>
+</th>
 </table>
 <p> <a href="/places"> Back</a> </body>
