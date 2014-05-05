@@ -1,7 +1,8 @@
 Address::Application.routes.draw do
-   root to: "pages#about"
+   root to: "places#index"
    get "pages/home"
    get "pages/about"
+   get "place/index"
    resources :places do
    post 'search', :on => :collection
    end
