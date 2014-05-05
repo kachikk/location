@@ -1,4 +1,5 @@
 Address::Application.routes.draw do
+   root to: "places#index"
    get "pages/home"
    get "pages/about"
    resources :places do
