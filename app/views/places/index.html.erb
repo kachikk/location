@@ -8,7 +8,7 @@
 
 <table border="1">
   
-  <tr>
+  <tbody>
     <% @places.each do |place| %>
       <tr>
         <td><%= place.name %></td>
@@ -17,12 +17,8 @@
         <td><%= place.longitude %></td>
         </tr>
     <% end %>
-  </tr>
+  </tbody>
 </table>
-
-
-
-
 
 
 
