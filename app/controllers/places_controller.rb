@@ -4,8 +4,9 @@ def index
 @places =Place.all
 #@letter=(params[:word])
 end
+
 def search
-@places= Place.find(:all, :conditions => ["name LIKE ?", " #{params[:key]}"])
+@places= Place.find(:all, :conditions => ["Name LIKE ?", "#{params[:key]}"])
 
 end
 

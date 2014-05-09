@@ -29,10 +29,10 @@ ActiveRecord::Schema.define(version: 20140505164436) do
   end
 
   create_table "places", force: true do |t|
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "name"
-    t.string   "location"
-    t.string   "latitude"
-    t.string   "longitude"
+    t.string   "address"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

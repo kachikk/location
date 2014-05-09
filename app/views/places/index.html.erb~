@@ -1,28 +1,24 @@
 <h1>Listing Locations</h1>
-<h3>Enter keyword</h3>
+<h3>Search our database</h3>
 <form action="<%= search_places_path %>" method="post">
 <input name="key" type="input" />
-<input value="Send" type="submit"/>
+<input value="Search" type="submit"/>
 </form>
 <br>
 
-<table border="1">
+<table border="">
   
-  <tr>
+  
     <% @places.each do |place| %>
       <tr>
-        <td><%= place.name %></td>
-        <td><%= place.location %></td>
         <td><%= place.latitude %></td>
         <td><%= place.longitude %></td>
+        <td><%= place.name %></td>
+        <td><%= place.address %></td>
         </tr>
     <% end %>
-  </tr>
+  
 </table>
-
-
-
-
 
 
 

@@ -2,21 +2,20 @@
 <table border="1">
 <tr>
 <th>
-<td width="40%"><b>Name</td>
-<td width="20%"><p align="center"><i><b>Location</b></i></td>
-<td width="20%"><p align="center"><i><b>Latitude</b></i></td>
+<td width="40%"><b>Latitude</td>
 <td width="20%"><p align="center"><i><b>Longitude</b></i></td>
+<td width="20%"><p align="center"><i><b>Name</b></i></td>
+<td width="20%"><p align="center"><i><b>Address</b></i></td>
 </th>
 </tr>
 
 <% @places.each do |place| %>
 <tbody>
-<td>
-<td><%= place.name %></td>
-</td>
-<td><%= place.location %></td>
+<tr>
 <td><%= place.latitude %></td>
 <td><%= place.longitude %></td>
+<td><%= place.name %></td>
+<td><%= place.address %></td>
 </tr>
 <% end %>
 </th>

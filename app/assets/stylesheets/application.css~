@@ -11,9 +11,11 @@
  *= require_self
  *= require_tree .
  */
-background-color: 
+.container
 {
-#99CCFF;
+
+background-color: #ccf1f8;
+border: 1px solid;
 }
 
 body 
@@ -32,5 +34,5 @@ table, td, th
 
 th 
 { 
-border-bottom: 1px solid #DDD; 
+border-bottom: 1px solid black; 
 }
