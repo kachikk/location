@@ -1,8 +1,8 @@
 <h1>Search results</h1>
-<table border="1">
+<table>
 <tr>
 <th>
-<td width="40%"><b>Latitude</td>
+<td width="20%"><p align="center"><i><b>Latitude</b></i></td>
 <td width="20%"><p align="center"><i><b>Longitude</b></i></td>
 <td width="20%"><p align="center"><i><b>Name</b></i></td>
 <td width="20%"><p align="center"><i><b>Address</b></i></td>
@@ -10,7 +10,7 @@
 </tr>
 
 <% @places.each do |place| %>
-<tbody>
+
 <tr>
 <td><%= place.latitude %></td>
 <td><%= place.longitude %></td>
@@ -18,6 +18,6 @@
 <td><%= place.address %></td>
 </tr>
 <% end %>
-</th>
+
 </table>
 <p> <a href="/places"> Back</a> </body>

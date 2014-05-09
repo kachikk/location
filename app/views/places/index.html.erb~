@@ -6,7 +6,7 @@
 </form>
 <br>
 
-<table border="">
+<table border="2">
   
   
     <% @places.each do |place| %>

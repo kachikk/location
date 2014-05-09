@@ -1,23 +1,23 @@
 <h1>Search results</h1>
-<table border="1">
+<table>
 <tr>
-<th>
-<td width="40%"><b>Name</td>
-<td width="20%"><p align="center"><i><b>Location</b></i></td>
-<td width="20%"><p align="center"><i><b>Latitude</b></i></td>
-<td width="20%"><p align="center"><i><b>Longitude</b></i></td>
-</th>
+  <th>
+    <td>Latitude</td>
+    <td>Longitude</td>
+    <td>Name</td>
+    <td>Address</td>
+  </th>
 </tr>
 
 <% @places.each do |place| %>
-<tbody>
+
 <tr>
-<td><%= place.latitude %></td>
-<td><%= place.longitude %></td>
-<td><%= place.name %></td>
-<td><%= place.address %></td>
-</tr>
+  <td><%= place.latitude %></td>
+  <td><%= place.longitude %></td>
+  <td><%= place.name %></td>
+  <td><%= place.address %></td>
+  </tr>
 <% end %>
-</th>
+
 </table>
-<p> <a href="/places"> Back</a> </body>
+<p> <a href="/places"> Back</a> 
