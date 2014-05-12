@@ -1,11 +1,11 @@
-<h1>Listing Locations</h1>
+
 <h3>Search our database</h3>
 <form action="<%= search_places_path %>" method="post">
 <input name="key" type="input" />
 <input value="Search" type="submit"/>
 </form>
 <br>
-
+ <h2>Listing Locations</h2>
 <table border="2">
   
   
