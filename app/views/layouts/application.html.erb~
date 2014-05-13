@@ -32,8 +32,8 @@
       <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
       <% else %>
       <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
-      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> |
-      <%= link_to "Admin", new_admin_session_path, :class => 'navbar-link'  %>
+      <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %> 
+      
       <div id="fb-root"></div>
       <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -46,6 +46,7 @@
     </div>
   </div>
 </nav>
+
 <div class="container">
  <% if notice %>
   <p class="alert alert-success"><%= notice %></p>
