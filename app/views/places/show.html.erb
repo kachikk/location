@@ -19,6 +19,12 @@
   <strong>Address:</strong>
   <%= @place.address %>
 </p>
+</br>
+<p>
+<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@place.address}%2c#{@place.name}" %>
+</p>
+</br>
+
 
 
 <%= link_to 'Back', places_path %>
