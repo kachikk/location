@@ -1,6 +1,9 @@
 Address::Application.routes.draw do
-  devise_for :admins
-   root to: "places#index"
+ 
+  
+ 
+  ActiveAdmin.routes(self)
+   root to: "pages#home"
    get "pages/home"
    get "pages/about"
    get "place/index"
