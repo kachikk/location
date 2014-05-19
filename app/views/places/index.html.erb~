@@ -1,3 +1,7 @@
+<% if can? :update, @place %>
+<td><%= link_to 'Edit', edit_project_path(place) %></td>
+<% end %>
+
 
 <h3>Search our database</h3>
 <form action="<%= search_places_path %>" method="post">
@@ -15,6 +19,7 @@
         <td><%= place.longitude %></td>
         <td><%= place.name %></td>
         <td><%= place.address %></td>
+        <td><%= link_to 'Show', place %></td>
         </tr>
     <% end %>
   
