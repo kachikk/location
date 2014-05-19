@@ -1,4 +1,7 @@
-<h1>Location App</h1>
+<h1><%= t ".title" %></h1>
+
+<%= link_to_unless_current "English", locale: "en" %> |
+<%= link_to_unless_current "Esperanto", locale: "esp" %>
 
 <style>
 p
@@ -8,8 +11,7 @@ color: blue;
 }
 
 </style>
-<p>Looking for a Burger King Location.</p>
-<p>You've come to the right place</p>
+<h1><%= t ".paragraph" %></h1>
 <p>
 <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %>  to view!</p>
 
