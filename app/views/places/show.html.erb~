@@ -1,6 +1,4 @@
-<% if can? :update, @place %>
-<td><%= link_to 'Edit', edit_place_path(place) %></td>
-<% end %>
+
 
 
 <p id="notice"><%= notice %></p>

@@ -1,8 +1,10 @@
 class PlacesController < ApplicationController
   before_filter :authorize, :only => [:place]
   before_filter :authenticate_admin!, :only => [:edit]
+  
 def index
 @places =Place.all
+
 end
 
 def search
